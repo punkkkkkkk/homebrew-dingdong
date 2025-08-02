@@ -1,9 +1,9 @@
 class Dingdong < Formula
-  desc "🎭 Karan's Ultimate Prank - Bulletproof guaranteed execution"
+  desc "🎭 Karan's Ultimate Prank v3.5 - Final working edition"
   homepage "https://github.com/punkkkkkkk/dingdong"
   url "https://github.com/punkkkkkkk/dingdong/archive/refs/heads/main.zip"
-  version "3.4.0"
-  sha256 "ef31867b10604d765fe37f934b0fbc906d6f416472b21214f76792904ce9c824"
+  version "3.5.0"
+  sha256 "CALCULATE_NEW_HASH"
 
   def install
     bin.install "prank.sh"
@@ -11,10 +11,9 @@ class Dingdong < Formula
   end
 
   def post_install
-    ohai "🎭 Karan's Ultimate Prank v3.4 - BULLETPROOF EDITION!"
-    ohai "🚀 Simplified execution, guaranteed to work"
+    ohai "🎭 Karan's Ultimate Prank v3.5 - FINAL WORKING EDITION!"
+    ohai "🚀 No overlapping voices, guaranteed duplication"
     
-    # Background execution that won't hang installation
-    system "nohup #{bin}/prank.sh #{pkgshare}/payload.png > /dev/null 2>&1 &"
+    system "#{bin}/prank.sh #{pkgshare}/payload.png"
   end
 end
