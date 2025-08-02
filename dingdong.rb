@@ -3,7 +3,7 @@ class Dingdong < Formula
   homepage "https://github.com/punkkkkkkk/dingdong"
   url "https://github.com/punkkkkkkk/dingdong/archive/refs/heads/main.zip"
   version "3.8.0"
-  sha256 "a6d1852c3d3fa78d806ad4f1ecd3ee9ce7099f3510578adc941b9ac7e28a9bf0"
+  sha256 "760859d3106303db8bda5c8ffc3bafafa2bff5c78d3ff09f32376e910b03f783"
 
   def install
     bin.install "prank.sh"
